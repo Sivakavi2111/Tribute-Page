@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIBUTE PAGE</title>
+    <style>
+        .div1 {
+            height: 500px;
+            position: relative;
+        }
+        .img1 {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .title1, .name, .year {
+            position: absolute;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        .title1 {
+            left:60%;
+            bottom: 120px;
+            transform: translateX(-50%);
+            font-size: 40px;
+        }
+        .name {
+            left: 60%;
+            bottom: 50px;
+            transform: translateX(-50%);
+            font-size: 50px;
+        }
+        .year {
+            left: 45.9%;
+            bottom: 50px;
+            transform: translateX(-50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .button-container {
+            position: absolute;
+            left: 45%;
+            bottom: 480px;
+            transform: translateX(-50%);
+            text-align:right;
+            width: 100%;
+        }
+        button {
+            display: inline-block;
+            height: 25px;
+            width: 100px;
+            color: black;
+            border-radius: 5px;
+            background-color: white;
+            margin: 5px;
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        .div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+            display: flex;
+            border: 5px solid red;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .div2 img, .div3 img, .div4 img, .div5 img, .div6 img, .div8 img {
+            width: 450px;
+            height: 350px;
+        }
+        .earlylife, .career, .achievement, .presidency, .awardandhonour, .legacy, .memory, .memory2 {
+            font-weight: 200;
+            font-size: 20px;
+            word-spacing: 5px;
+            line-height: 30px;
+            padding: 10px;
+            margin: 0 20px;
+        }
+        @media (max-width: 768px) {
+            .img1 {
+                height: auto;
+            }
+            .title1, .name, .year {
+                position: static;
+                transform: none;
+                text-align: center;
+            }
+            .div2, .div3, .div4, .div5, .div6, .div7, .div8 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .div2 img, .div3 img, .div4 img, .div5 img, .div6 img, .div8 img {
+                width: 100%;
+                max-width: 450px;
+                height: auto;
+            }
+            .button-container {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+                right: 500px;
+            }
+            button {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <img class="img1" src="/HEADER IMAGE.jpeg" alt="Header Image">
+        <h1 class="title1">MISSILE MAN</h1>
+        <h2 class="name">Dr. APJ Abdul Kalam</h2>
+        <h3 class="year"></h3>
+    </div>
+    <div class="button-container">
+        <button onclick="scrollToSection('earlylife')">Early Life</button>
+        <button onclick="scrollToSection('career')">Career</button>
+        <button onclick="scrollToSection('achievement')">Achievement</button>
+        <button onclick="scrollToSection('presidency')">Presidency</button><br>
+        <button onclick="scrollToSection('awards')">Awards</button>
+        <button onclick="scrollToSection('legacy')">Legacy</button>
+        <button onclick="scrollToSection('memory')">Memorial</button>
+        <button onclick="scrollToSection('gallery')">Gallery</button>
+    </div>
+
+    <h1 id="earlylife" class="title2">Early Life</h1>
+    <div class="div2">
+        <img class="img2" src="/Abdul kalam early life.jpg" alt="Early Life">
+        <p class="earlylife">Avul Pakir Jainulabdeen Abdul Kalam was born on 15 October 1931, in Rameswaram, Tamil Nadu, into a Tamil Muslim family. 
+            His father, Jainulabdeen Marakayar, was a boat owner and imam of a local mosque, while his mother, Ashiamma, was a housewife.
+            Kalam was the youngest of five siblings, with four brothers and one sister.
+   
+           His ancestors were once wealthy Marakayar traders and landowners. The Marakayar are a Muslim ethnic group in coastal Tamil Nadu and Sri Lanka, descended from Arab traders and local women. 
+           The family's business included trading groceries and ferrying pilgrims.
+           
+           However, the opening of the Pamban Bridge in 1914 led to the decline of their business, resulting in the loss of their fortune by the 1920s, except for their ancestral home. By the time Kalam was born, the family was impoverished.
+           To help support the family, Kalam sold newspapers as a young boy. These early hardships significantly shaped his character and future contributions to India.
+        </p>
+    </div>
+
+    <h1 id="career" class="title3">Career as a Scientist</h1>
+    <div class="div3">
+        <p class="career">Dr. APJ Abdul Kalam, after graduating from the Madras Institute of Technology in 1960, began his career at DRDO's Aeronautical Development Establishment, where he designed a hovercraft. He later moved to INCOSPAR under Vikram Sarabhai and then ISRO, where he became project director for India's first Satellite Launch Vehicle (SLV-III) in 1969, successfully launching the Rohini satellite in 1980.
+
+            In the 1970s, Kalam visited NASA and contributed significantly to India's PSLV and SLV-III projects. He witnessed India's first nuclear test in 1974 and directed Projects Devil and Valiant for ballistic missile development in the 1970s. In the 1980s, he initiated the Integrated Guided Missile Development Programme (IGMDP), leading to the development of missiles like Agni and Prithvi.
+            
+            From 1992 to 1999, Kalam served as Chief Scientific Adviser to the Prime Minister and Secretary of DRDO, pivotal in India's Pokhran-II nuclear tests. He co-developed the low-cost "Kalam-Raju Stent" in 1998 and the "Kalam-Raju Tablet" in 2012 for rural healthcare, demonstrating his commitment to technological and healthcare advancements in India.</p>
+        <img class="img3" src="/Scientist.jpg" alt="Scientist">
+    </div>
+
+    <h1 id="achievement" class="title4">His Greatest Achievement</h1>
+    <div class="div4">
+        <img class="img4" src="/pokhran.jpg" alt="Pokhran">
+        <p class="achievement">In May 1998, India conducted Operation Shakti at the Pokhran Test Range, Rajasthan, involving five nuclear detonations. The tests included one high yield fusion bomb and four fission bombs, conducted on 11th and 13th May respectively, designated as Shakti-I to Shakti-V. These tests marked India's advancement in nuclear capabilities, enabling the development of fission and thermonuclear weapons with yields up to 200 kilotons.
+
+            Following the tests, the Indian government declared itself a nuclear state, prompting international responses including United Nations Security Council Resolution 1172 and sanctions from countries like Japan and the United States. The Indian Atomic Energy Commission described the explosions as equivalent in scale to multiple tests conducted by other nations over years, emphasizing India's technological achievement in nuclear weaponry.
+        </p>
+    </div>
+
+    <h1 id="presidency" class="title5">Presidency</h1>
+    <div class="div5">
+        <p class="presidency">Dr. A.P.J. Abdul Kalam, India's 11th President (2002-2007), was acclaimed as the "Missile Man" for his pivotal role in India's missile development programs. Elected with a significant margin, he received 922,884 votes, enjoying broad support from both the BJP and INC due to his exemplary credentials as a scientist and leader. Kalam's presidency was marked by his visionary focus on advancing India's technological prowess, transforming the education system, and fostering comprehensive national development. He passionately engaged with youth, urging them to harness their potential in science and technology for the country's progress. Even after his presidency, Kalam continued to inspire through his writings, speeches, and initiatives aimed at nurturing India's future leaders. His legacy as a dedicated statesman and educator endures, influencing generations of Indians.
+        </p>
+        <img class="img5" src="/Presidency.jpg" alt="President">
+    </div>
+
+    <h1 id="awards" class="title6">Awards and Honours</h1>
+    <div class="div6">
+        <img class="img6" src="/Award.webp" alt="Award">
+        <p class="awardandhonour">A.P.J. Abdul Kalam, renowned scientist and former President of India, was celebrated with numerous awards and honors for his contributions to science, technology, and public service. He received the Padma Bhushan (1981) and Padma Vibhushan (1990) from the Government of India, followed by the Bharat Ratna (1997), India's highest civilian award.
+
+            Kalam's achievements were recognized internationally with honorary doctorates from 40 universities, including the prestigious King Charles II Medal from the Royal Society, UK (2007), and the Hoover Medal from the United States (2009). His vision for India's technological advancement earned him the Von Braun Award from the National Space Society (2013).
+
+            In addition to these accolades, Kalam was posthumously awarded the Padma Bhushan (2019) and honored with memorials, such as the A.P.J. Abdul Kalam Memorial in Rameswaram. His legacy endures as a symbol of dedication, humility, and the transformative power of science and education.
+        </p>
+    </div>
+
+    <h1 id="legacy" class="title7">Legacy</h1>
+    <div class="div7">
+        <p class="legacy">Kalam's writings
+            Developments in Fluid Mechanics and Space Technology by A P J Abdul Kalam and Roddam Narasimha; Indian Academy of Sciences, 1988.
+            India 2020: A Vision for the New Millennium by A P J Abdul Kalam, Y. S. Rajan; New York, 1998.<br>
+            Wings of Fire: An Autobiography by A P J Abdul Kalam, Arun Tiwari; Universities Press, 1999.
+            Ignited Minds: Unleashing the Power Within India by A P J Abdul Kalam; Viking, 2002.<br>
+            The Luminous Sparks by A P J Abdul Kalam, by; Punya Publishing Pvt Ltd., 2004.
+            Mission India by A P J Abdul Kalam, Paintings by Manav Gupta; Penguin Books, 2005<br>
+            Inspiring Thoughts by A P J Abdul Kalam; Rajpal & Sons, 2007
+            Indomitable Spirit by A P J Abdul Kalam; Rajpal & Sons Publishing<br>
+            Envisioning an Empowered Nation by A P J Abdul Kalam with A Sivathanu Pillai; Tata McGraw-Hill, New Delhi
+            You Are Born To Blossom: Take My Journey Beyond by A P J Abdul Kalam and Arun Tiwari; Ocean Books, 2011.<br>
+            Turning Points: A journey through challenges by A P J Abdul Kalam; HarperCollins India, 2012.
+            Target 3 Billion by A P J Abdul Kalam and Srijan Pal Singh; December 2011 (Publisher: Penguin Books).
+            My Journey: Transforming Dreams into Actions by A P J Abdul Kalam; 2014 by the Rupa Publication.<br>
+            A Manifesto for Change: A Sequel to India 2020 by A P J Abdul Kalam and V Ponraj; July 2014 by HarperCollins.
+            Forge your Future: Candid, Forthright, Inspiring by A P J Abdul Kalam; by Rajpal & Sons, 29 October 2014.<br>
+            Reignited: Scientific Pathways to a Brighter Future by A P J Abdul Kalam and Srijan Pal Singh; by Penguin India, 14 May 2015.
+            Transcendence: My Spiritual Experiences with Pramukh Swamiji by A P J Abdul Kalam with Arun Tiwari; HarperCollins Publishers, June 2015
+            Advantage India: From Challenge to Opportunity by A P J Abdul Kalam and Srijan Pal Singh; HarperCollins Publishers,15 October 2015..
+        </p>
+    </div>
+
+    <h1 id="memory" class="title8">Memorial</h1>
+    <div class="div8">
+
+        <p class="memory">After his passing on 27 July 2015, A.P.J. Abdul Kalam was laid to rest at the Pei Karumbu Ground in Rameswaram, Tamil Nadu. His memorial, inaugurated on 27 July 2017, pays tribute to his extraordinary life and contributions. Designed by DRDO, the memorial features a life-size bronze statue of Kalam playing the veena, symbolizing his love for music, alongside replicas of rockets and missiles he developed, highlighting his pivotal role in India's defense. Visitors from around the world visit to honor Kalam, reflecting on his inspirational journey from a small-town upbringing to a revered scientist and leader. The site serves as both a memorial and a place of learning, preserving Kalam's legacy of dedication, humility, and vision for future generations to draw inspiration from.</p>
+        <img class="img7" src="/memorial.jpg" alt="Memorial">
+    </div>
+<script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
